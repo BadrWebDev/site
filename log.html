@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login/Sign Up Page</title>
+    <!-- Bootstrap CSS -->
+    <link href="bootstrap-5.0.2-dist/css/bootstrap.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <style>
+        body {
+            background: linear-gradient(135deg, #1B5E20, #4CAF50);
+            height: 100vh;
+            font-family: 'Poppins', sans-serif;
+            overflow: hidden;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Horizontally center */
+            justify-content: center; /* Vertically center */
+        }
+        body h1 {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            background-image: linear-gradient(90deg, #ffc107, #2E7D32 60%, #ffffff 60%);
+            background-size: 300% 300%;
+            background-clip: text;
+            -webkit-background-clip: text;
+            color: transparent;
+            animation: colorFlow 4s infinite alternate-reverse;
+        }
+
+        @keyframes colorFlow {
+            0% { background-position: 100% 0; }
+            50% { background-position: 100% 100%; }
+            100% { background-position: 0 0; }
+        }
+
+        .login-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+            width: 400px;
+        }
+        .login-card {
+            background-color: #fff;
+            padding: 2rem;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            width: 100%;
+        }
+        .login-title {
+            text-align: center;
+            margin-bottom: 1.5rem;
+        }
+        .login-title-signup {
+            text-align: center;
+        }
+        .login-button {
+            width: 100%;
+            border: none;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .login-button:hover {
+            background-color: #0056b3;
+        }
+        .form-group label {
+            font-weight: bold;
+        }
+        .form-group input {
+            border-radius: 5px;
+            border: 1px solid #ccc;
+            padding: 12px;
+            font-size: 14px;
+            width: 100%;
+        }
+        .form-group input:focus {
+            border-color: #007bff;
+        }
+        .toggle-link {
+            cursor: pointer;
+            text-decoration: underline;
+            color: #007bff;
+        }
+        .link {
+            text-decoration: none;
+        }
+        .label {
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    
+        <h1>Welcome to Healty Eating</h1>
+        <div class="login-container">
+        <div class="login-card" id="loginCard">
+            <h2 class="login-title" id="formTitle">Login</h2>
+            <form id="loginForm" class="was-validated">
+                <div class="mb-3 form-group">
+                    <label for="username" class="form-label label">Username</label>
+                    <input type="text" class="form-control border-success" id="username" placeholder="Enter your username" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <label for="password" class="form-label label">Password</label>
+                    <input type="password" class="form-control border-success" id="password" placeholder="Enter your password" required>
+                </div>
+                <div class="d-flex justify-content-between">
+                    <div>
+                        <input type="checkbox" id="rememberMe"> <label for="rememberMe">Remember me</label>
+                    </div>
+                    <div>
+                        <a href="#" class="text-primary">Forgot password?</a>
+                    </div>
+                </div>
+                <button type="button" class="login-button mt-3 btn btn-success" onclick="redirectToHome()">Login</button>
+            </form>
+            <p class="mt-3 text-center">Don't have an account? <span class="toggle-link" onclick="toggleForm()">Sign up</span></p>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="login-card" id="signUpCard" style="display: none;">
+            <h2 class="login-title-signup" id="formTitleSignUp">Sign Up</h2>
+            <form id="signUpForm">
+                <div class="mb-3 form-group">
+                    <label for="newUsername" class="form-label label">Username</label>
+                    <input type="text" class="form-control border-success" id="newUsername" placeholder="Choose a username" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <label for="newEmail" class="form-label label">Email</label>
+                    <input type="email" class="form-control border-success" id="newEmail" placeholder="Enter your email" required>
+                </div>
+                <div class="mb-3 form-group">
+                    <label for="newPassword" class="form-label label">Password</label>
+                    <input type="password" class="form-control border-success" id="newPassword" placeholder="Choose a password" required>
+                </div>
+                <button type="submit" class="login-button mt-3 btn btn-success">Sign Up</button>
+            </form>
+            <p class="mt-3 text-center">Already have an account? <span class="toggle-link" onclick="toggleForm()">Login</span></p>
+        </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="bootstrap-5.0.2-dist/js/bootstrap.js"></script>
+    <!-- Custom JS -->
+    <script>
+        function toggleForm() {
+            const loginCard = document.getElementById("loginCard");
+            const signUpCard = document.getElementById("signUpCard");
+            const formTitle = document.getElementById("formTitle");
+            const formTitleSignUp = document.getElementById("formTitleSignUp");
+
+            // Toggle between Login and Sign Up forms
+            loginCard.style.display = loginCard.style.display === "none" ? "block" : "none";
+            signUpCard.style.display = signUpCard.style.display === "none" ? "block" : "none";
+
+            // Change title accordingly
+            formTitle.style.display = formTitle.style.display === "none" ? "block" : "none";formTitleSignUp.style.display = formTitle.style.display === "none" ? "block" : "none";
+        }
+        function redirectToHome() {
+            window.location.href = "C:\\projets\\projet web statique\\home page\\main.html";
+        }
+    </script>
+</body>
+</html>
