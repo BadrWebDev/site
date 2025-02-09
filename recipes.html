@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="recipes.css">
+</head>
+<body>
+    <nav>
+        <h1 class="logo">Healthy Eating</h1>
+        <ul class="nav-links">
+            <li class="link"><a href="C:\projets\projet web statique\home page\main.html">Home</a></li>
+            <li class="link"><a href="C:\projets\projet web statique\racipes page\recipes.html">Recipes</a></li>
+            <li class="link"><a href="C:\projets\projet web statique\nutrition tips\nutritiontips.html">Nutrition Tips</a></li>
+            <li class="link"><a href="C:\projets\projet web statique\Meal Planning\MealPlanning.html">Meal Planning</a></li>
+            <li class="link"><a href="C:\projets\projet web statique\Blog Page\BlogPage.html">Blog</a></li>
+            <li class="link"><a href="C:\projets\projet web statique\about\about.html">About</a></li>
+        </ul>
+        <div class="register">
+            <a href="C:\projets\projet web statique\login page\log.html" class="profile-icon"></a>
+        </div>
+    </nav>
+
+    <!-- search bar section -->
+
+    <div class="bar-container">
+        <div class="bar">
+            <span>Easy Navigation</span>
+            <img src="search.png" alt="">
+        </div>
+        <ul class="bar-links">
+                <li class=""><a href="#menu">menu</a></li>
+                <li class=""><a href="#breakfast-recipes">Breakfast Recipes</a></li>
+                <li class=""><a href="#lunch-recipes">Lunch Recipes</a></li>
+                <li class=""><a href="#dinner-recipes">Dinner Recipes</a></li>
+                <li class=""><a href="#snack-recipes">Snack Recipes</a></li>
+                <li class=""><a href="#dessert-recipes">Dessert Recipes</a></li>
+                <li class=""><a href="#vegan-recipes">Vegan Recipes</a></li>
+                <li class=""><a href="#featured-recipe-video">Featured Recipe Video</a></li>
+        </ul>
+    </div>
+
+
+    <section class="intro">
+        <h2>Welcome to the Recipes Page</h2>
+        <p>Explore a selection of healthy and delicious recipes tailored to all tastes and needs.</p>
+        <p>Eat healthy, enjoy fully!</p>
+    </section>
+    
+    <section class="recipe-categories">
+        <h2>Explore Our Recipe Categories</h2>
+        <div class="categories-container">
+            <!-- Breakfast -->
+            <a href="#breakfast-recipes" class="categorie-item item1" data-title="Breakfast"></a>
+    
+            <!-- Lunch -->
+            <a href="#lunch-recipes" class="categorie-item item2" data-title="Lunch"></a>
+    
+            <!-- Dinner -->
+            <a href="#dinner-recipes" class="categorie-item item3" data-title="Dinner"></a>
+    
+            <!-- Snacks -->
+            <a href="#snack-recipes" class="categorie-item item4" data-title="Snacks"></a>
+    
+            <!-- Desserts -->
+            <a href="#dessert-recipes" class="categorie-item item5" data-title="Desserts"></a>
+    
+            <!-- Vegan -->
+            <a href="#vegan-recipes" class="categorie-item item6" data-title="Vegan"></a>
+        </div>
+    </section>
+    
+
+<!-- Recipe Section -->
+<section id="breakfast-recipes" class="recipes">
+    <h2>Breakfast Recipes</h2>
+    <div class="recipe-container">
+        <!-- Recipe Items -->
+        <div class="recipe-item">
+            <img src="Avocado Toast with Poached Egg.jpeg" alt="Avocado Toast with Poached Egg">
+            <h3>Avocado Toast with Poached Egg</h3>
+            <p>A simple yet delicious breakfast packed with healthy fats.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 slice whole-grain bread</li>
+                    <li>1/2 avocado, mashed</li>
+                    <li>1 poached egg</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Toast the bread until golden.</li>
+                    <li>Spread the mashed avocado on top.</li>
+                    <li>Place the poached egg on the avocado toast.</li>
+                    <li>Sprinkle with salt and pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Smoothie Bowl.jpeg" alt="Smoothie Bowl with fresh fruit and granola">
+            <h3>Smoothie Bowl</h3>
+            <p>A colorful and nutritious breakfast or snack loaded with vitamins.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 banana</li>
+                    <li>1 cup frozen berries (strawberries, blueberries, raspberries)</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1/4 cup almond milk</li>
+                    <li>Toppings: granola, fresh fruit, chia seeds</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Blend the banana, frozen berries, Greek yogurt, and almond milk until smooth.</li>
+                    <li>Pour the smoothie into a bowl.</li>
+                    <li>Top with granola, fresh fruit, and chia seeds.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Greek Yogurt Parfait.jpeg" alt="Greek Yogurt Parfait with honey, fruits, and granola">
+            <h3>Greek Yogurt Parfait</h3>
+            <p>Layers of creamy Greek yogurt, sweet honey, fresh fruit, and crunchy granola.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup Greek yogurt</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 cup granola</li>
+                    <li>1/2 cup fresh fruit (such as berries, sliced banana, or diced mango)</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>In a glass or bowl, add a layer of Greek yogurt.</li>
+                    <li>Drizzle with honey or maple syrup.</li>
+                    <li>Add a layer of granola.</li>
+                    <li>Add a layer of fresh fruit.</li>
+                    <li>Repeat the layers until all ingredients are used, finishing with a layer of fresh fruit on top.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Chia Seed Pudding.jpeg" alt="Chia Seed Pudding topped with fresh berries">
+            <h3>Chia Seed Pudding</h3>
+            <p>A nutritious pudding made with chia seeds soaked in almond milk, topped with fresh berries.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1/4 cup chia seeds</li>
+                    <li>1 cup almond milk (or any milk of your choice)</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 teaspoon vanilla extract (optional)</li>
+                    <li>Toppings: fresh berries, sliced banana, nuts, granola, etc.</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li> In a bowl or jar, combine chia seeds, almond milk, honey (or maple syrup), and vanilla extract (if using).</li>
+                    <li>Stir well to ensure the chia seeds are evenly distributed.</li>
+                    <li>Cover and refrigerate for at least 2 hours or overnight, allowing the chia seeds to absorb the liquid and form a pudding-like consistency.</li>
+                    <li>Before serving, give the pudding a good stir to break up any clumps.</li>
+                    <li>Top with your favorite toppings such as fresh berries, sliced banana, nuts, or granola.</li>
+                    <li>Serve and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item view-more">
+            <a href="all-recipes.html" class="view-more-link">
+                <img src="plus.png" alt="View More Recipes">
+                <span>View More Recipes</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Lunch Recipes Page -->
+<section id="lunch-recipes" class="recipes">
+    <h2>Lunch Recipes</h2>
+    <div class="recipe-container">
+        <!-- Recipe Items -->
+        <div class="recipe-item">
+            <img src="Avocado Toast with Poached Egg.jpeg" alt="Avocado Toast with Poached Egg">
+            <h3>Avocado Toast with Poached Egg</h3>
+            <p>A simple yet delicious breakfast packed with healthy fats.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 slice whole-grain bread</li>
+                    <li>1/2 avocado, mashed</li>
+                    <li>1 poached egg</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Toast the bread until golden.</li>
+                    <li>Spread the mashed avocado on top.</li>
+                    <li>Place the poached egg on the avocado toast.</li>
+                    <li>Sprinkle with salt and pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Smoothie Bowl.jpeg" alt="Smoothie Bowl with fresh fruit and granola">
+            <h3>Smoothie Bowl</h3>
+            <p>A colorful and nutritious breakfast or snack loaded with vitamins.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 banana</li>
+                    <li>1 cup frozen berries (strawberries, blueberries, raspberries)</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1/4 cup almond milk</li>
+                    <li>Toppings: granola, fresh fruit, chia seeds</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Blend the banana, frozen berries, Greek yogurt, and almond milk until smooth.</li>
+                    <li>Pour the smoothie into a bowl.</li>
+                    <li>Top with granola, fresh fruit, and chia seeds.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Greek Yogurt Parfait.jpeg" alt="Greek Yogurt Parfait with honey, fruits, and granola">
+            <h3>Greek Yogurt Parfait</h3>
+            <p>Layers of creamy Greek yogurt, sweet honey, fresh fruit, and crunchy granola.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup Greek yogurt</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 cup granola</li>
+                    <li>1/2 cup fresh fruit (such as berries, sliced banana, or diced mango)</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>In a glass or bowl, add a layer of Greek yogurt.</li>
+                    <li>Drizzle with honey or maple syrup.</li>
+                    <li>Add a layer of granola.</li>
+                    <li>Add a layer of fresh fruit.</li>
+                    <li>Repeat the layers until all ingredients are used, finishing with a layer of fresh fruit on top.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Chia Seed Pudding.jpeg" alt="Chia Seed Pudding topped with fresh berries">
+            <h3>Chia Seed Pudding</h3>
+            <p>A nutritious pudding made with chia seeds soaked in almond milk, topped with fresh berries.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1/4 cup chia seeds</li>
+                    <li>1 cup almond milk (or any milk of your choice)</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 teaspoon vanilla extract (optional)</li>
+                    <li>Toppings: fresh berries, sliced banana, nuts, granola, etc.</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li> In a bowl or jar, combine chia seeds, almond milk, honey (or maple syrup), and vanilla extract (if using).</li>
+                    <li>Stir well to ensure the chia seeds are evenly distributed.</li>
+                    <li>Cover and refrigerate for at least 2 hours or overnight, allowing the chia seeds to absorb the liquid and form a pudding-like consistency.</li>
+                    <li>Before serving, give the pudding a good stir to break up any clumps.</li>
+                    <li>Top with your favorite toppings such as fresh berries, sliced banana, nuts, or granola.</li>
+                    <li>Serve and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item view-more">
+            <a href="all-recipes.html" class="view-more-link">
+                <img src="plus.png" alt="View More Recipes">
+                <span>View More Recipes</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Dinner Recipes Page -->
+<section id="dinner-recipes" class="recipes">
+    <h2>Dinner Recipes</h2>
+    <div class="recipe-container">
+        <!-- Recipe Items -->
+        <div class="recipe-item">
+            <img src="Avocado Toast with Poached Egg.jpeg" alt="Avocado Toast with Poached Egg">
+            <h3>Avocado Toast with Poached Egg</h3>
+            <p>A simple yet delicious breakfast packed with healthy fats.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 slice whole-grain bread</li>
+                    <li>1/2 avocado, mashed</li>
+                    <li>1 poached egg</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Toast the bread until golden.</li>
+                    <li>Spread the mashed avocado on top.</li>
+                    <li>Place the poached egg on the avocado toast.</li>
+                    <li>Sprinkle with salt and pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Smoothie Bowl.jpeg" alt="Smoothie Bowl with fresh fruit and granola">
+            <h3>Smoothie Bowl</h3>
+            <p>A colorful and nutritious breakfast or snack loaded with vitamins.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 banana</li>
+                    <li>1 cup frozen berries (strawberries, blueberries, raspberries)</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1/4 cup almond milk</li>
+                    <li>Toppings: granola, fresh fruit, chia seeds</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Blend the banana, frozen berries, Greek yogurt, and almond milk until smooth.</li>
+                    <li>Pour the smoothie into a bowl.</li>
+                    <li>Top with granola, fresh fruit, and chia seeds.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Greek Yogurt Parfait.jpeg" alt="Greek Yogurt Parfait with honey, fruits, and granola">
+            <h3>Greek Yogurt Parfait</h3>
+            <p>Layers of creamy Greek yogurt, sweet honey, fresh fruit, and crunchy granola.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup Greek yogurt</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 cup granola</li>
+                    <li>1/2 cup fresh fruit (such as berries, sliced banana, or diced mango)</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>In a glass or bowl, add a layer of Greek yogurt.</li>
+                    <li>Drizzle with honey or maple syrup.</li>
+                    <li>Add a layer of granola.</li>
+                    <li>Add a layer of fresh fruit.</li>
+                    <li>Repeat the layers until all ingredients are used, finishing with a layer of fresh fruit on top.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Chia Seed Pudding.jpeg" alt="Chia Seed Pudding topped with fresh berries">
+            <h3>Chia Seed Pudding</h3>
+            <p>A nutritious pudding made with chia seeds soaked in almond milk, topped with fresh berries.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1/4 cup chia seeds</li>
+                    <li>1 cup almond milk (or any milk of your choice)</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 teaspoon vanilla extract (optional)</li>
+                    <li>Toppings: fresh berries, sliced banana, nuts, granola, etc.</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li> In a bowl or jar, combine chia seeds, almond milk, honey (or maple syrup), and vanilla extract (if using).</li>
+                    <li>Stir well to ensure the chia seeds are evenly distributed.</li>
+                    <li>Cover and refrigerate for at least 2 hours or overnight, allowing the chia seeds to absorb the liquid and form a pudding-like consistency.</li>
+                    <li>Before serving, give the pudding a good stir to break up any clumps.</li>
+                    <li>Top with your favorite toppings such as fresh berries, sliced banana, nuts, or granola.</li>
+                    <li>Serve and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item view-more">
+            <a href="all-recipes.html" class="view-more-link">
+                <img src="plus.png" alt="View More Recipes">
+                <span>View More Recipes</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Snack Recipes Page -->
+<section id="snack-recipes" class="recipes">
+    <h2>Snack Recipes</h2>
+    <div class="recipe-container">
+        <!-- Recipe Items -->
+        <div class="recipe-item">
+            <img src="Avocado Toast with Poached Egg.jpeg" alt="Avocado Toast with Poached Egg">
+            <h3>Avocado Toast with Poached Egg</h3>
+            <p>A simple yet delicious breakfast packed with healthy fats.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 slice whole-grain bread</li>
+                    <li>1/2 avocado, mashed</li>
+                    <li>1 poached egg</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Toast the bread until golden.</li>
+                    <li>Spread the mashed avocado on top.</li>
+                    <li>Place the poached egg on the avocado toast.</li>
+                    <li>Sprinkle with salt and pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Smoothie Bowl.jpeg" alt="Smoothie Bowl with fresh fruit and granola">
+            <h3>Smoothie Bowl</h3>
+            <p>A colorful and nutritious breakfast or snack loaded with vitamins.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 banana</li>
+                    <li>1 cup frozen berries (strawberries, blueberries, raspberries)</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1/4 cup almond milk</li>
+                    <li>Toppings: granola, fresh fruit, chia seeds</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Blend the banana, frozen berries, Greek yogurt, and almond milk until smooth.</li>
+                    <li>Pour the smoothie into a bowl.</li>
+                    <li>Top with granola, fresh fruit, and chia seeds.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Greek Yogurt Parfait.jpeg" alt="Greek Yogurt Parfait with honey, fruits, and granola">
+            <h3>Greek Yogurt Parfait</h3>
+            <p>Layers of creamy Greek yogurt, sweet honey, fresh fruit, and crunchy granola.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup Greek yogurt</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 cup granola</li>
+                    <li>1/2 cup fresh fruit (such as berries, sliced banana, or diced mango)</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>In a glass or bowl, add a layer of Greek yogurt.</li>
+                    <li>Drizzle with honey or maple syrup.</li>
+                    <li>Add a layer of granola.</li>
+                    <li>Add a layer of fresh fruit.</li>
+                    <li>Repeat the layers until all ingredients are used, finishing with a layer of fresh fruit on top.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Chia Seed Pudding.jpeg" alt="Chia Seed Pudding topped with fresh berries">
+            <h3>Chia Seed Pudding</h3>
+            <p>A nutritious pudding made with chia seeds soaked in almond milk, topped with fresh berries.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1/4 cup chia seeds</li>
+                    <li>1 cup almond milk (or any milk of your choice)</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 teaspoon vanilla extract (optional)</li>
+                    <li>Toppings: fresh berries, sliced banana, nuts, granola, etc.</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li> In a bowl or jar, combine chia seeds, almond milk, honey (or maple syrup), and vanilla extract (if using).</li>
+                    <li>Stir well to ensure the chia seeds are evenly distributed.</li>
+                    <li>Cover and refrigerate for at least 2 hours or overnight, allowing the chia seeds to absorb the liquid and form a pudding-like consistency.</li>
+                    <li>Before serving, give the pudding a good stir to break up any clumps.</li>
+                    <li>Top with your favorite toppings such as fresh berries, sliced banana, nuts, or granola.</li>
+                    <li>Serve and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item view-more">
+            <a href="all-recipes.html" class="view-more-link">
+                <img src="plus.png" alt="View More Recipes">
+                <span>View More Recipes</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Dessert Recipes Page -->
+<section id="dessert-recipes" class="recipes">
+    <h2>Dessert Recipes</h2>
+    <div class="recipe-container">
+        <!-- Recipe Items -->
+        <div class="recipe-item">
+            <img src="Avocado Toast with Poached Egg.jpeg" alt="Avocado Toast with Poached Egg">
+            <h3>Avocado Toast with Poached Egg</h3>
+            <p>A simple yet delicious breakfast packed with healthy fats.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 slice whole-grain bread</li>
+                    <li>1/2 avocado, mashed</li>
+                    <li>1 poached egg</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Toast the bread until golden.</li>
+                    <li>Spread the mashed avocado on top.</li>
+                    <li>Place the poached egg on the avocado toast.</li>
+                    <li>Sprinkle with salt and pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Smoothie Bowl.jpeg" alt="Smoothie Bowl with fresh fruit and granola">
+            <h3>Smoothie Bowl</h3>
+            <p>A colorful and nutritious breakfast or snack loaded with vitamins.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 banana</li>
+                    <li>1 cup frozen berries (strawberries, blueberries, raspberries)</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1/4 cup almond milk</li>
+                    <li>Toppings: granola, fresh fruit, chia seeds</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Blend the banana, frozen berries, Greek yogurt, and almond milk until smooth.</li>
+                    <li>Pour the smoothie into a bowl.</li>
+                    <li>Top with granola, fresh fruit, and chia seeds.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Greek Yogurt Parfait.jpeg" alt="Greek Yogurt Parfait with honey, fruits, and granola">
+            <h3>Greek Yogurt Parfait</h3>
+            <p>Layers of creamy Greek yogurt, sweet honey, fresh fruit, and crunchy granola.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup Greek yogurt</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 cup granola</li>
+                    <li>1/2 cup fresh fruit (such as berries, sliced banana, or diced mango)</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>In a glass or bowl, add a layer of Greek yogurt.</li>
+                    <li>Drizzle with honey or maple syrup.</li>
+                    <li>Add a layer of granola.</li>
+                    <li>Add a layer of fresh fruit.</li>
+                    <li>Repeat the layers until all ingredients are used, finishing with a layer of fresh fruit on top.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Chia Seed Pudding.jpeg" alt="Chia Seed Pudding topped with fresh berries">
+            <h3>Chia Seed Pudding</h3>
+            <p>A nutritious pudding made with chia seeds soaked in almond milk, topped with fresh berries.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1/4 cup chia seeds</li>
+                    <li>1 cup almond milk (or any milk of your choice)</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 teaspoon vanilla extract (optional)</li>
+                    <li>Toppings: fresh berries, sliced banana, nuts, granola, etc.</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li> In a bowl or jar, combine chia seeds, almond milk, honey (or maple syrup), and vanilla extract (if using).</li>
+                    <li>Stir well to ensure the chia seeds are evenly distributed.</li>
+                    <li>Cover and refrigerate for at least 2 hours or overnight, allowing the chia seeds to absorb the liquid and form a pudding-like consistency.</li>
+                    <li>Before serving, give the pudding a good stir to break up any clumps.</li>
+                    <li>Top with your favorite toppings such as fresh berries, sliced banana, nuts, or granola.</li>
+                    <li>Serve and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item view-more">
+            <a href="all-recipes.html" class="view-more-link">
+                <img src="plus.png" alt="View More Recipes">
+                <span>View More Recipes</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Vegan Recipes Page -->
+<section id="vegan-recipes" class="recipes">
+    <h2>Vegan Recipes</h2>
+    <div class="recipe-container">
+        <!-- Recipe Items -->
+        <div class="recipe-item">
+            <img src="Avocado Toast with Poached Egg.jpeg" alt="Avocado Toast with Poached Egg">
+            <h3>Avocado Toast with Poached Egg</h3>
+            <p>A simple yet delicious breakfast packed with healthy fats.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 slice whole-grain bread</li>
+                    <li>1/2 avocado, mashed</li>
+                    <li>1 poached egg</li>
+                    <li>Salt and pepper to taste</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Toast the bread until golden.</li>
+                    <li>Spread the mashed avocado on top.</li>
+                    <li>Place the poached egg on the avocado toast.</li>
+                    <li>Sprinkle with salt and pepper. Serve immediately.</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Smoothie Bowl.jpeg" alt="Smoothie Bowl with fresh fruit and granola">
+            <h3>Smoothie Bowl</h3>
+            <p>A colorful and nutritious breakfast or snack loaded with vitamins.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 banana</li>
+                    <li>1 cup frozen berries (strawberries, blueberries, raspberries)</li>
+                    <li>1/2 cup Greek yogurt</li>
+                    <li>1/4 cup almond milk</li>
+                    <li>Toppings: granola, fresh fruit, chia seeds</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>Blend the banana, frozen berries, Greek yogurt, and almond milk until smooth.</li>
+                    <li>Pour the smoothie into a bowl.</li>
+                    <li>Top with granola, fresh fruit, and chia seeds.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Greek Yogurt Parfait.jpeg" alt="Greek Yogurt Parfait with honey, fruits, and granola">
+            <h3>Greek Yogurt Parfait</h3>
+            <p>Layers of creamy Greek yogurt, sweet honey, fresh fruit, and crunchy granola.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1 cup Greek yogurt</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 cup granola</li>
+                    <li>1/2 cup fresh fruit (such as berries, sliced banana, or diced mango)</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li>In a glass or bowl, add a layer of Greek yogurt.</li>
+                    <li>Drizzle with honey or maple syrup.</li>
+                    <li>Add a layer of granola.</li>
+                    <li>Add a layer of fresh fruit.</li>
+                    <li>Repeat the layers until all ingredients are used, finishing with a layer of fresh fruit on top.</li>
+                    <li>Serve immediately and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item">
+            <img src="Chia Seed Pudding.jpeg" alt="Chia Seed Pudding topped with fresh berries">
+            <h3>Chia Seed Pudding</h3>
+            <p>A nutritious pudding made with chia seeds soaked in almond milk, topped with fresh berries.</p>
+            <p class="cta-button">Hover to See The Recipe</p>
+            <div class="recipe-details">
+                <h4>Ingredients:</h4>
+                <ul>
+                    <li>1/4 cup chia seeds</li>
+                    <li>1 cup almond milk (or any milk of your choice)</li>
+                    <li>1 tablespoon honey or maple syrup</li>
+                    <li>1/2 teaspoon vanilla extract (optional)</li>
+                    <li>Toppings: fresh berries, sliced banana, nuts, granola, etc.</li>
+                </ul>
+                <h4>How to Make:</h4>
+                <ol>
+                    <li> In a bowl or jar, combine chia seeds, almond milk, honey (or maple syrup), and vanilla extract (if using).</li>
+                    <li>Stir well to ensure the chia seeds are evenly distributed.</li>
+                    <li>Cover and refrigerate for at least 2 hours or overnight, allowing the chia seeds to absorb the liquid and form a pudding-like consistency.</li>
+                    <li>Before serving, give the pudding a good stir to break up any clumps.</li>
+                    <li>Top with your favorite toppings such as fresh berries, sliced banana, nuts, or granola.</li>
+                    <li>Serve and enjoy!</li>
+                </ol>
+            </div>
+        </div>
+        <div class="recipe-item view-more">
+            <a href="all-recipes.html" class="view-more-link">
+                <img src="plus.png" alt="View More Recipes">
+                <span>View More Recipes</span>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- Recipe Video Section -->
+<section id="featured-recipe-video" class="recipe-video-section">
+    <div class="container">
+        <h2>How to Make Our Featured Recipe</h2>
+        <p>Follow along with this step-by-step video tutorial to create a delicious smoothie bowl!</p>
+
+        <div class="video-wrapper">
+            <!-- Video with Poster Thumbnail -->
+            <video class="tumbnail" controls poster="Smoothie Bowl tumbnail.jpeg">
+                <source src="EASY Blueberry Smoothie Bowl .mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+    </div>
+</section>
+
+
+
+    <!-- Footer Section -->
+<footer>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Healthy Eating</h3>
+            <p>Welcome to Healthy Eating, where our mission is to inspire and guide you towards a balanced and nutritious lifestyle. Discover delicious recipes, practical nutrition tips, and thoughtful meal planning advice.</p>
+        </div>
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#recipes">Recipes</a></li>
+                <li><a href="#nutrition-tips">Nutrition Tips</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h3>Contact Us</h3>
+            <p>Email: <a href="mailto:info@healthyeating.com">info@healthyeating.com</a></p>
+            <p>Phone: +123 456 7890</p>
+        </div>
+        <div class="footer-section social">
+            <h3>Follow Us</h3>
+            <a href="#"><img class="icon" src="facebook.png" alt="Facebook"><span>Facebook</span></a>
+            <a href="#"><img class="icon" src="instagram.png" alt="Instagram"><span>Instagram</span></a>
+            <a href="#"><img class="icon" src="twitter.png" alt="Twitter"><span>Twitter</span></a>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2025 Healthy Eating. All rights reserved.</p>
+        <a href="#privacy-policy">Privacy Policy</a> | <a href="#terms-of-service">Terms of Service</a>
+    </div>
+</footer>
+</body>
+</html>
