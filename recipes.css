@@ -283,7 +283,7 @@ nav {
 .item3 { background-image: url('dinner.jpeg'); }
 .item4 { background-image: url('snack.jpeg'); }
 .item5 { background-image: url('dessert.jpeg'); }
-.item6 { background-image: url('vegan.jpeg'); }
+.item6 { background-image: url('Vegan.jpeg'); }
 
 /* Responsive Design */
 @media screen and (max-width: 768px) {
